@@ -1,0 +1,22 @@
+This is Sample Shell Script file to install Jenkins on Tomcat Server and install Maven
+
+This Script will do the following things
+
+1) It will create  dir as tools and inside the tools dir it will create tomcat and maven dir
+
+2) It will update the server and install unzip tool (as ubuntu server does not comes with unzip soft)
+
+3) It will install Java-11-openjdk
+
+4) It will install tomcat server under root/tools/tomcat dir and will isntall jenkins as .war file under the webapps dir
+
+5) It will create a sym link to start to tomcat server
+
+6) It will install maven under /root/tools/maven dir and will set the path variable for mvn in .profile file.
+
+7) It will ask us if we want to start the Jenkins Server, if we select yes then it will start the Jenkins Sever and will show us the first time password require to setup Jenkins
+
+8) NOTE: After updated the Maven Path Variable it is mandtory to relogin. So kindly switch to ubuntu user and log back in with sudo su - ( it is necessary for mvn command to work )
+
+
+
