@@ -63,6 +63,7 @@ prompt_user() {
                 echo "Starting the Jenkins server..."
                 tomcatup
                 echo "Jenkins server started."
+		sleep 10
                  # Check if the Jenkins password file exists and display the password
                 if [ -f /root/.jenkins/secrets/initialAdminPassword ]; then
                     echo "Jenkins initial admin password:"
